@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "**My Journey from Pre-Law to FlatIron**"
-date:       2018-09-26 14:31:51 +0000
+title:      "My Journey from Pre-Law to FlatIron"
+date:       2018-09-26 10:31:52 -0400
 permalink:  my_journey_from_pre-law_to_flatiron
 ---
 
