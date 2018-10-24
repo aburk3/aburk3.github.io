@@ -24,10 +24,7 @@ end
 ```
 <br>
 <br>
-Okay what is `self` referring to here? The answer I kept running into was, "It is refferring to whatever object the 
-
-method is called on." But this didn't make things clear for me. Let's put it into context.
-<br>
+Okay what is `self` referring to here? The answer I kept running into was, "It is refferring to whatever object the method is called on." But this didn't make things clear for me. Let's put it into context.
 <br>
 <br>
 Imagine you have an instance of a Dog (class) set to a variable "Skimpy."
