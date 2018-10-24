@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "For Everyone Struggling with `Self`"
-date:       2018-10-24 19:30:53 +0000
+date:       2018-10-24 15:30:54 -0400
 permalink:  for_everyone_struggling_with_self
 ---
 
@@ -9,7 +9,6 @@ permalink:  for_everyone_struggling_with_self
 I struggled with the concept of `self` in Ruby for a little longer than necessary I believe. So, I wanted to add to the 
 
 literature out there so that any newcomer may not get held up on it for as long as I did. 
-<br>
 <br>
 <br>
 <br>
@@ -28,7 +27,6 @@ end
 Okay what is `self` referring to here? The answer I kept running into was, "It is refferring to whatever object the 
 
 method is called on." But this didn't make things clear for me. Let's put it into context.
-<br>
 <br>
 <br>
 <br>
