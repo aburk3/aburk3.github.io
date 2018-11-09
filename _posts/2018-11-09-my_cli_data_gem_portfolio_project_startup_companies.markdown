@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My CLI Data Gem Portfolio Project (Startup Companies)"
-date:       2018-11-09 16:32:48 +0000
+date:       2018-11-09 11:32:49 -0500
 permalink:  my_cli_data_gem_portfolio_project_startup_companies
 ---
 
@@ -17,7 +17,7 @@ From the beginning, my goal was to create use the CLI to allow a user to be pres
 The above-mentioned SR Score (more info [here](https://www.startupranking.com/how-it-works)) is obtained by scraping a second page that displays the details of the company. 
 
 
-<h3>*Now to the acutal code*</h3>
+<h3>Now to the acutal code</h3>
 
 The most time-consuming part of this project was undoubtedly scraping the pages for the correct information (name, location, rank, SR Score).
 
