@@ -29,7 +29,7 @@ The next challenge I came across was obtaining the URL of the details page for t
 
 I found out that each 'details' page simply had the company name appended to the end of the URL (example [page](https://www.startupranking.com/medium)). Since I already scraped the name of the company from the homepage. It was simply a matter of adding the `name` instance variable onto the end of the URL of the details page that I need information from. 
 
-<h4>Waiting on the Scraper</h4>
+<h3>Waiting on the Scraper</h3>
 
 I soon found out that the user would end up waiting on the scraper to load the information every time they wanted to be show the list of startups again. To fix this, I decided to create a `refresh` method. This way, if the user wants to see the list, and the instance variable already has a value, it will not scrape again; however, if the user types in 'refresh' it will call on the `refresh` method and re-scrape the page for the most up-to-date data. I found that this made the user experience much more fluid. 
 
