@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Sinatra CRUD Application"
-date:       2019-01-13 23:02:36 +0000
+date:       2019-01-13 18:02:37 -0500
 permalink:  sinatra_crud_application
 ---
 
 
-For this Sinatra project, I decided to make a *CRUD* (Create, Read, Update, Delete) application with a bit of added functionality. The function of the application is to act as an advanced 'Website Bookmark' tool. It allows you to add a website, followed by attaching a tag to the website so that you can quickly filter your websites out. The tag may be: work, food, family, shopping, blogs, etc.
+For this Sinatra project, I decided to make a *CRUD* (Create, Read, Update, Delete) application called ['Web-book'](https://github.com/aburk3/web-book) with a bit of added functionality. The function of the application is to act as an advanced 'Website Bookmark' tool. It allows you to add a website, followed by attaching a tag to the website so that you can quickly filter your websites out. The tag may be: work, food, family, shopping, blogs, etc.
 
 You begin by creating a profile. This process requires you to verify your password and contains salted password hashing by way of the `bcryp` ruby gem. 
 
