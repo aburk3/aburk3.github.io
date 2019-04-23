@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails Meets JavaScript"
-date:       2019-04-23 09:53:25 +0000
+date:       2019-04-23 05:53:25 -0400
 permalink:  rails_meets_javascript
 ---
 
@@ -44,7 +44,42 @@ $(document).on('click', ".show_link", function(e) {
       $('#app-container').append(postHtml)
     })
   })
-	````
+	```
+	
+	The core of this bit of code can be explained as follows:
+	1. Upon clicking the link for a Post, Prevent the default action of refreshing the page (`e.preventDefault()`)
+	2. Clear the designated container of all HTML in prepartion for new data (`$('#app-container').html('')`)
+	3. `Fetch` the Post object of the link you clicked by using the `data-id` attribute assigned to the link and using it in the route (`fetch('/posts/${id}.json'`)
+	4. Receive a JSON as the response object and use it to create a JavaScript Post Object (`new Post(post)`) by passing the post to the constructor function
+	5. Format the HTML for the Post's show page by calling on a function for creating custom HTML (`newPost.formatShow()`)
+	6. Finally, append the formatted Post to the container that you cleared out earlier!
 
+This is a small example of how a simple container can be used by JavaScript to allow for dynamic content to be displayed without a prevent page refresh. 
+
+Although this is an example of fetching data, the functions that allow for POSTing data don't look all that different:
+
+```
+ $('#new_post').on('submit', function(e) {
+    e.preventDefault();
+    const values = $(this).serialize();
+
+    /**
+     * Makes AJAX post,
+     * clears container html,
+     * creates Post object, formats HTML,
+     * and appends HTML to container
+     */
+    $.post('/posts', values).done(function(data) {
+      $('#app-container').html('');
+      const newPost = new Post(data)
+      const htmlToAdd = newPost.formatShow()
+
+      $('#app-container').html(htmlToAdd);
+    })
+  })
+}
+```
+
+It took me a little while to get used to using JavaScript with Rails, but once I started to see the patterns it all became a whole lot easier!
 
 
