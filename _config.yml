@@ -1,11 +1,11 @@
 # Site settings
 author: Austin Burke
-title: Mindful Monkeys
+title: Austin Burke
 header-img: img/home-bg.png
 email: aburk3@gmail.com
 copyright_name: Austin Burke
 description: > # this means to ignore newlines until "baseurl:"
-  If you give a million monkeys each a keyboard...
+  Talking about code.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  aburk3
